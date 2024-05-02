@@ -57,4 +57,44 @@ Il est possible d'effectuer des opérations de débit sur les comptes clients. C
 - Rendre Inactif un Client :
 Les chefs d'agence peuvent désactiver un profil client dans le système, ce qui peut être utile pour des comptes inutilisés. 
 
+== Analyse des besoins incluant V0 et V1
+
+- Créditer/débiter un compte :
+Récupérer les informations du compte (numéro de compte, solde, etc.) depuis la base de données
+Valider le montant de la transaction (positif pour un crédit, négatif pour un débit)
+Mettre à jour le solde du compte en conséquence
+Enregistrer la transaction dans la base de données avec les informations pertinentes (date, montant, type de transaction, etc.)
+Retourner le nouveau solde du compte
+
+- Créer un compte :
+Récupérer les informations du nouveau client (nom, prénom, adresse, etc.)
+Générer un numéro de compte unique
+Créer le nouveau compte dans la base de données avec un solde initial
+Retourner les informations du nouveau compte
+
+- Effectuer un virement de compte à compte :
+Récupérer les informations des deux comptes impliqués (numéros de compte, soldes)
+Valider que le compte émetteur a un solde suffisant pour le virement
+Débiter le compte émetteur et créditer le compte bénéficiaire
+Enregistrer la transaction dans la base de données avec les informations pertinentes
+Retourner les nouveaux soldes des deux comptes
+
+- Clôturer un compte :
+Récupérer les informations du compte à clôturer (numéro de compte, solde)
+Vérifier que le solde du compte est nul
+Supprimer le compte de la base de données
+Retourner un message de confirmation de clôture
+
+
+== Analyse des contraintes ◦ techniques et organisationnelles
+
+- Contraintes techniques : 
+Utilisation de logiciel non optimisés (win-design)
+
+compatibilité entre système d’exploitation
+
+- Contraintes organisationnelles : 
+Réunions/coordination possible seulement en créneaux prévus
+
+Congés/jours fériés
 
