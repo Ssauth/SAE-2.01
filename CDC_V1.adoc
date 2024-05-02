@@ -16,8 +16,8 @@
 |===
 | Équipe |
 
-| Chef de Projet | ?
-| Membres | Loïc PHRAKOUSONH, Thomas AUSSENAC, Jules GIARD--PELLAT, Clément RICHAUDEAU
+| Chef de Projet | Thomas AUSSENAC
+| Membres | Loïc PHRAKOUSONH, Jules GIARD--PELLAT, Clément RICHAUDEAU
 
 |===
 
