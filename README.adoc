@@ -42,7 +42,7 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 |===
 | Date    | Nom         |  Lien                             | Retour
 | Sem.18  | CDC V1      |         https://github.com/IUT-Blagnac/sae2-01-devapp-2024-sae-4b1/blob/main/CDC_V1.adoc nous n'avons pas eu le temps d'ajouter le JAR à notre CDC                          |           
-|         |Gantt V1 Prévu|        https://github.com/IUT-Blagnac/sae2-01-devapp-2024-sae-4b1/blob/main/GANTT_V1_SAEP.png                          |
+|         |Gantt V1 Prévu|        https://github.com/IUT-Blagnac/sae2-01-devapp-2024-sae-4b1/blob/main/GANTT_V1_SAEP.png                          | Il faut préciser les fonctionnalités et les affecter pour V1. Il faudra les créer dans votre projet avec labels, milstone et les assigner. Il faudra mettre à jour le tableau du readme.
 | 07/05  | CdC V2final|                                     |  
 |         | Doc. Tec. V0 |        |    
 |         | Doc User V0    |        |
