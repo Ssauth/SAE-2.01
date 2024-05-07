@@ -1,0 +1,100 @@
+
+= Cahier des Charges - Version 2
+
+
+== Informations Générales
+
+[cols="2*"]
+|===
+| Projet | Développement de l'application JAVA-Oracle pour la gestion des comptes clients
+
+| Client | Banque DailyBank
+
+| Date | Mai 2024
+
+| Version | 2
+|===
+|===
+| Équipe |
+
+| Chef de Projet | Thomas AUSSENAC
+| Membres | Loïc PHRAKOUSONH, Jules GIARD--PELLAT, Clément RICHAUDEAU
+
+|===
+
+== Sommaire
+
+* Présentation du Sujet
+** Contexte
+** Objectifs
+* Analyse de l’Existant
+* Analyse des besoins incluant V0
+* Analyse des contraintes
+** Techniques 
+** Organisationnelles
+
+== Présentation du Sujet
+
+=== Contexte
+Aujourd'hui, la numérisation des systèmes est devenue la norme,
+c'est pour cela que le secteur bancaire est confronté à une transformation majeure due à la montée en puissance des applications financières, notamment les applications mobiles qui accélère sa croissance alimentée par l’arrivée des jeunes sur le marché. Les banques traditionnelles doivent s'adapter pour rester compétitives face à de nouveaux entrants axés sur l'expérience utilisateur digitale. Cette évolution est cruciale face aux nouveaux entrants spécialisés dans les services bancaires numériques.
+De plus, les banques doivent disposer d'une interface assez intuitive, car une mauvaise expérience utilisateur peut directement affecter la réputation de la banque.
+
+=== Objectifs
+Le projet consiste à développer une application JAVA-Oracle de gestion des comptes clients pour la banque DailyBank, visant à améliorer les outils déjà existants. L'application sera déployée dans les 100 agences du réseau de la banque. L'application pourra débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
+
+== Analyse de l’Existant
+
+L'application existante "Daily Bank" (Version V0) permet aux guichetiers et chefs d'agence d'effectuer certaines actions de base sur les comptes clients :
+
+- Modification des Informations Client :
+Les guichetiers et chefs d'agence peuvent mettre à jour les informations des clients, telles que l'adresse, le téléphone, etc. Cette fonctionnalité est essentielle pour maintenir des données client précises.
+- Création d'un Nouveau Client :
+Il est possible de créer un nouveau profil client dans le système. Cette fonctionnalité permet d'ajouter de nouveaux clients à la base de données de la banque.
+- Consultation de Comptes :
+Les guichetiers et chefs d'agence peuvent accéder aux informations des comptes clients, y compris les soldes, les informations des clients etc.
+- Débit d'un Compte :
+Il est possible d'effectuer des opérations de débit sur les comptes clients. Cette fonctionnalité permet d'effectuer des transactions de retrait d'argent.
+- Rendre Inactif un Client :
+Les chefs d'agence peuvent désactiver un profil client dans le système, ce qui peut être utile pour des comptes inutilisés. 
+
+== Analyse des besoins incluant V0 et V1
+
+- Créditer/débiter un compte :
+Récupérer les informations du compte (numéro de compte, solde, etc.) depuis la base de données
+Valider le montant de la transaction (positif pour un crédit, négatif pour un débit)
+Mettre à jour le solde du compte en conséquence
+Enregistrer la transaction dans la base de données avec les informations pertinentes (date, montant, type de transaction, etc.)
+Retourner le nouveau solde du compte
+
+- Créer un compte :
+Récupérer les informations du nouveau client (nom, prénom, adresse, etc.)
+Générer un numéro de compte unique
+Créer le nouveau compte dans la base de données avec un solde initial
+Retourner les informations du nouveau compte
+
+- Effectuer un virement de compte à compte :
+Récupérer les informations des deux comptes impliqués (numéros de compte, soldes)
+Valider que le compte émetteur a un solde suffisant pour le virement
+Débiter le compte émetteur et créditer le compte bénéficiaire
+Enregistrer la transaction dans la base de données avec les informations pertinentes
+Retourner les nouveaux soldes des deux comptes
+
+- Clôturer un compte :
+Récupérer les informations du compte à clôturer (numéro de compte, solde)
+Vérifier que le solde du compte est nul
+Supprimer le compte de la base de données
+Retourner un message de confirmation de clôture
+
+
+== Analyse des contraintes ◦ techniques et organisationnelles
+
+- Contraintes techniques : 
+Utilisation de logiciel non optimisés (win-design)
+
+compatibilité entre système d’exploitation
+
+- Contraintes organisationnelles : 
+Réunions/coordination possible seulement en créneaux prévus
+
+Congés/jours fériés
