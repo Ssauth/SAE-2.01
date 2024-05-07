@@ -1,5 +1,4 @@
 
-=== Exemple readme étudiant
 
 ==== Présentation de l'équipe et rôles respectifs
 
@@ -8,11 +7,11 @@
 [options="header,footer"]
 |=======================
 |version|rôle     |use case   |cas...                 |   Thomas AUSSENAC | Loïc PHRAKOUSONH  |   Jules Giard-Pellat | Clément RICHAUDEAU
-|1    |Chef d’Agence    |CRUD employé  |C| | | |
-|1    |Chef d’Agence    |CRUD employé  |R| | | |
-|1    |Chef d’Agence |CRUD employé  |U| | | |
-|1    |Chef d’Agence   |CRUD employé  |D| | | |
-|1    |Guichetier     | Compte | Créer|| | | 
+|1    |Chef d’Agence    |CRUD employé  |C|  | X | |
+|1    |Chef d’Agence    |CRUD employé  |R|  | X | |
+|1    |Chef d’Agence |CRUD employé  |U| | X | |
+|1    |Chef d’Agence   |CRUD employé  |D| | X | |
+|1    |Guichetier     | Compte | Créer|| X | | 
 |1    |Guichetier     | Compte | Créditer/Débiter|| | | 
 |1    |Guichetier     | Compte | Effectuer un virement|| | | 
 |1    |Guichetier     | Compte | Clôturer|| | | 
