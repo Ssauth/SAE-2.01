@@ -1,8 +1,7 @@
 
 = Cahier des Charges - Version 2
 :toc:
-:toc-title:
-
+:toc-title: Sommaire
 
 == Informations Générales
 
@@ -26,20 +25,6 @@
 
 
 
-= Sommaire
-
-
-
-
-* Présentation du Sujet
-** Contexte
-** Objectifs
-* Analyse de l’Existant
-* Analyse des besoins incluant V0
-* Analyse des contraintes
-** Techniques 
-** Organisationnelles
-
 == Présentation du Sujet
 
 === Contexte
@@ -51,7 +36,7 @@ De plus, les banques doivent disposer d'une interface assez intuitive, car une m
 Le projet consiste à développer une application JAVA-Oracle de gestion des comptes clients pour la banque DailyBank, visant à améliorer les outils déjà existants. L'application sera déployée dans les 100 agences du réseau de la banque. L'application pourra débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
 
 == Analyse de l’Existant
-
+.Diagramme des Cas d’Utilisation initial V0
 image::DCV0.svg[]
 
 L'application existante "Daily Bank" (Version V0) permet aux guichetiers et chefs d'agence d'effectuer certaines actions de base sur les comptes clients :
@@ -67,11 +52,18 @@ Il est possible d'effectuer des opérations de débit sur les comptes clients. C
 - Rendre Inactif un Client :
 Les chefs d'agence peuvent désactiver un profil client dans le système, ce qui peut être utile pour des comptes inutilisés. 
 
+Il y a un jar exécutable V0 qui représente l'application "Daily Bank" qui permet de se connecter en tant que guichetier ou chef d'agence grâce à un nom d'utilisateur et un mot de passe et d'effectuer les actions au dessus
+
+.Capture d'écran de l'interface jar V0
+image::app.PNG[]
 == Analyse des besoins incluant V0 et V1
 
 === Besoins Fonctionnelles :
+.Diagramme des Cas d’Utilisation initial V1
+image::DCV1.svg[] 
 
-image::DCV2.png[]
+.Diagramme des Cas d’Utilisation initial V2
+image::DCV2.svg[]
 
 - Créditer :
 Saisir le numéro de compte à créditer et le montant
@@ -125,9 +117,9 @@ Les chefs d'agence peuvent simuler un emprunt et une assurance d'emprunt pour le
 - Langage de programmation :
 L'application doit être développée en utilisant le langage de programmation Java.
 Java a été choisi car c'est le langage utilisé dans la version 0 de l'application.
--Système de gestion de base de données :
+- Système de gestion de base de données :
 L'application doit utiliser le système de gestion de base de données (SGBD) Oracle.
--Sécurité :
+- Sécurité :
 L'application doit respecter les normes de sécurité bancaire en vigueur pour la gestion des comptes clients.
 
 == Analyse des contraintes ◦ techniques et organisationnelles
