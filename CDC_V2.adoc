@@ -22,7 +22,7 @@
 
 |===
 
-== 1.Sommaire
+== 1. Sommaire
 
 * Présentation du Sujet
 ** Contexte
@@ -33,7 +33,7 @@
 ** Techniques 
 ** Organisationnelles
 
-== 2.Présentation du Sujet
+== 2. Présentation du Sujet
 
 === Contexte
 Aujourd'hui, la numérisation des systèmes est devenue la norme,
