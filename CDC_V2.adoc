@@ -1,6 +1,7 @@
 
 = Cahier des Charges - Version 2
-
+:toc:
+:toc-title: 
 
 == Informations Générales
 
@@ -22,7 +23,9 @@
 
 |===
 
-== 1. Sommaire
+
+
+== Sommaire
 
 * Présentation du Sujet
 ** Contexte
@@ -33,7 +36,7 @@
 ** Techniques 
 ** Organisationnelles
 
-== 2. Présentation du Sujet
+== Présentation du Sujet
 
 === Contexte
 Aujourd'hui, la numérisation des systèmes est devenue la norme,
