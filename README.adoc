@@ -45,7 +45,7 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 | 07/05  | CdC V2final|         https://github.com/IUT-Blagnac/sae2-01-devapp-2024-sae-4b1/blob/main/CdC%20V2final.adoc                            |  
 |         | Doc. Tec. V0 |        |    
 |         | Doc User V0    |        |
-|         | Recette V0  |                      | 
+|         | Recette V0  |   https://github.com/IUT-Blagnac/sae2-01-devapp-2024-sae-4b1/blob/main/Recette%20V0.adoc                   | 
 | 31/05   | Gantt V1  réalisé    |       | 
 |         | Doc. Util. V1 |         |         
 |         | Doc. Tec. V1 |                |     
