@@ -2,6 +2,24 @@
 :toc:
 :toc-title: Sommaire
 
+[cols="2*"]
+|===
+| Projet | Développement de l'application JAVA-Oracle pour la gestion des comptes clients
+
+| Client | Banque DailyBank
+
+| Date | Mai 2024
+
+| Version | 0
+|===
+|===
+| Équipe |
+
+| Chef de Projet | Thomas AUSSENAC
+| Membres | Loïc PHRAKOUSONH, Jules GIARD--PELLAT, Clément RICHAUDEAU
+
+|===
+
  
 
 
