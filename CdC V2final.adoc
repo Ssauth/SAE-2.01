@@ -139,3 +139,29 @@ Des tests de compatibilité devront être effectués pour garantir le bon foncti
 - Réunions et coordination possibles uniquement sur des créneaux prévus :
 ** Les réunions de coordination entre nous ne pourront avoir lieu que sur des créneaux spécifiques.
 Cette contrainte de disponibilité limitée pour les réunions devra être prise en compte dans la planification du projet afin de réussir notre projet.
+
+== Modalités de Mise en Œuvre :
+- Livraisons Attendues :
+[cols="1,2",options=header]
+|===
+| Date    | Nom         
+| Sem.18  | CDC V1                                               
+|        |Gantt V1 Prévu
+| 07/05  | CdC V2final
+|         | Doc. Tec. V0     
+|         | Doc User V0  
+|         | Recette V0  
+| 31/05   | Gantt V1  réalisé    
+|         | Doc. Util. V1          
+|         | Doc. Tec. V1      
+|         | Code V1     
+|         | Recette V1  
+|         | Gantt V2 prévu  
+| 14/06   | Gantt V2  réalisé    
+|         | Doc. Util. V2          
+|         | Doc. Tec. V2 
+|         | Code V2     
+|         | Recette V2  
+|         | `jar` projet  
+|===
+
