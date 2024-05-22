@@ -11,10 +11,10 @@
 |1    |Chef d’Agence    |CRUD employé  |R|  | X | |
 |1    |Chef d’Agence |CRUD employé  |U| | X | |
 |1    |Chef d’Agence   |CRUD employé  |D| | X | |
-|1    |Guichetier     | Compte | Créer|| X | | 
-|1    |Guichetier     | Compte | Créditer/Débiter|| | | 
-|1    |Guichetier     | Compte | Effectuer un virement|| | | 
-|1    |Guichetier     | Compte | Clôturer|| | | 
+|1    |Guichetier     | Compte | Créer| X | | | 
+|1    |Guichetier     | Compte | Créditer/Débiter| X | | | 
+|1    |Guichetier     | Compte | Effectuer un virement| X | | | 
+|1    |Guichetier     | Compte | Clôturer| X | | | 
 |2    |Chef d’Agence     | Compte | Débit exceptionnel|| | | 
 |2    |Chef d’Agence     | Emprunt | Simuler emprunt|| | | 
 |2    |Chef d’Agence     | Emprunt | Simuler assurance|| | | 
