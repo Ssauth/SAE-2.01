@@ -39,4 +39,13 @@ public class Employe {
 				+ ", idAg=" + this.idAg + "]";
 	}
 
+	public CompteCourant creerCompte(int idNumCompte, int debitAutorise, double solde, String estCloture, int idNumCli){
+
+		if(this.droitsAccess.equals("Guichetier") || this.droitsAccess.equals("Chef d’Agence")){
+			return new CompteCourant(idNumCompte, debitAutorise, solde, estCloture, idNumCli);
+		}else{
+			return null;
+		}
+	}
+
 }
