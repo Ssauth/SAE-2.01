@@ -16,6 +16,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.Client;
 import model.data.CompteCourant;
+import model.orm.Access_BD_Client;
 import model.orm.Access_BD_CompteCourant;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
@@ -73,13 +74,13 @@ public class ComptesManagement {
 		if (compte != null) {
 			try {
 				// Temporaire jusqu'à implémentation
-				compte = null;
-				AlertUtilities.showAlert(this.cmStage, "En cours de développement", "Non implémenté",
-						"Enregistrement réel en BDD du compe non effectué\nEn cours de développement", AlertType.ERROR);
+				
 
 				// TODO : enregistrement du nouveau compte en BDD (la BDD donne de nouvel id
 				// dans "compte")
+				Access_BD_CompteCourant ac = new Access_BD_CompteCourant();
 
+				ac.insertCompteCourant(compte);
 				// if JAMAIS vrai
 				// existe pour compiler les catchs dessous
 				if (Math.random() < -1) {

@@ -169,4 +169,46 @@ public class Access_BD_CompteCourant {
 			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
 		}
 	}
+
+
+	public void insertCompteCourant(CompteCourant cc)
+        throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
+    Connection con = null;
+    PreparedStatement pst = null;
+    try {
+        // Obtenir la connexion à la base de données
+        con = LogToDatabase.getConnexion();
+
+        // Définir la requête d'insertion avec des paramètres
+        String query = "INSERT INTO COMPTECOURANT (IDNUMCOMPTE, DEBITAUTORISE, SOLDE, IDNUMCLI, ESTCLOTURE) " +
+                       "VALUES (SEQ_ID_COMPTE.NEXTVAL, ?, ?, ?, ?)";
+
+        // Préparer la requête
+        pst = con.prepareStatement(query);
+        pst.setInt(1, cc.debitAutorise);
+        pst.setDouble(2,cc.solde);
+        pst.setInt(3, cc.idNumCli);
+        pst.setString(4, cc.estCloture);
+
+        // Exécuter la requête d'insertion
+        pst.executeUpdate();
+
+        // Valider la transaction
+        con.commit();
+
+
+        // Fermer les ressources
+        pst.close();
+    } catch (SQLException e) {
+        try {
+            if (con != null) {
+                con.rollback();  // Annuler la transaction en cas d'erreur
+            }
+        } catch (SQLException rollbackEx) {
+            throw new DatabaseConnexionException("Erreur lors de l'annulation de la transaction", rollbackEx);
+        }
+        throw new DataAccessException(Table.CompteCourant, Order.INSERT, "Erreur d'accès à la base de données", e);
+    
+}
+    }
 }

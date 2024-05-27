@@ -2,6 +2,8 @@ package application.view;
 
 import java.util.Locale;
 
+import model.orm.Access_BD_CompteCourant;
+
 import application.DailyBankState;
 import application.tools.AlertUtilities;
 import application.tools.ConstantesIHM;
@@ -170,6 +172,7 @@ public class CompteEditorPaneViewController {
 		case CREATION:
 			if (this.isSaisieValide()) {
 				this.compteResultat = this.compteEdite;
+				
 				this.containingStage.close();
 			}
 			break;

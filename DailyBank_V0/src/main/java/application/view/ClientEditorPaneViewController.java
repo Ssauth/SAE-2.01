@@ -176,6 +176,7 @@ public class ClientEditorPaneViewController {
 		case CREATION:
 			if (this.isSaisieValide()) {
 				this.clientResultat = this.clientEdite;
+				
 				this.containingStage.close();
 			}
 			break;
