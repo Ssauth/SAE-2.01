@@ -189,7 +189,7 @@ public class Access_BD_CompteCourant {
         pst.setDouble(2,cc.solde);
         pst.setInt(3, cc.idNumCli);
         pst.setString(4, cc.estCloture);
-
+		//test
         // Exécuter la requête d'insertion
         pst.executeUpdate();
 
